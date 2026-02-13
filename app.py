@@ -101,8 +101,8 @@ def send_location_alert(taluk, predicted_cases, risk):
 
     officer = officer_contacts[taluk]
 
-    sender_email = st.secrets["EMAIL_ADDRESS"]
-    sender_password = st.secrets["EMAIL_PASSWORD"]
+    sender_email = st.secrets["kalamvisionaries@gmail.com"]
+    sender_password = st.secrets["ddlgkfzlxufzwciz"]
 
     subject = f"{risk} Risk Dengue Alert - {taluk}"
 
@@ -276,4 +276,3 @@ with tab3:
     ))
 
     st.plotly_chart(fig, use_container_width=True)
-
